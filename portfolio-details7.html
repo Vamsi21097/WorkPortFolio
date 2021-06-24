@@ -43,10 +43,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>SPRINT - 6</h2>
+          <h2>SPRINT - 7</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>SPRINT - 6</li>
+            <li>SPRINT - 7</li>
           </ol>
         </div>
 
@@ -64,15 +64,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details6-1.JPG" alt="">
+                  <img src="assets/img/portfolio/portfolio-details7-1.JPG" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details6-2.JPG" alt="">
+                  <img src="assets/img/portfolio/portfolio-details7-2.JPG" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details6-3.JPG" alt="">
+                  <img src="assets/img/portfolio/portfolio-details7-3.JPG" alt="">
                 </div>
 
               </div>
@@ -82,22 +82,31 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
               <ul>
-                <li><strong>Sprint-6:</strong> Learning Objectives page</li>
+                <li><strong>Sprint-7:</strong> Learning Objectives page & Day Modules page</li>
                 <!-- <li><strong>Technologies Used:</strong><br>HTML,CSS,Bootstrap,Javascript,AWS  </li> -->
                 
-                 <li><strong>User Story:</strong>Preview page for courses and viewing their learning objectives as well as activities.</li>
+                 <li><strong>User Story:</strong>As a course developer, I should be able to link the pre-requisite learning objectives for a learning objective, so that it can be used to personalize the module for each student in the iLMS.</li>
                  <li><strong>Description:</strong></li>
-                 <p style="font-size:18px;text-align: justify;">
-                In this week, I have worked on learning objective page. In the last week we have an issue regarding automation of generating title from the youtube URL id, this week we resolved it by using google cloud api. In the last week we used await function to
-                retrieve youtube data where the page is automatically refreshed, so in this week we removed await function and fetched the data.
-                Automated the id's, if the user choose the course in course page and clicks on open then redirects to learning objective page and the id generated as per the course name and L and number(2222L1).
-                We were asked to generate JSON file in the backend. We have worked on it using api calls. We will send JSON data from frontend to backend with api calls. At the backend, it will search for the folder as per course name and if folder doesn't exist then it will create 
-                the folder and then creates the files later the JSON data gets appended to it. Along with this, the dropdown will be displayed at the right of the page.    
-
-
+                 <p>
+                 In this week, we worked on learning objective page and day module page. In learning objective page, when the user clicks on the dropdown button 
+                 then it displays the items like preview and delete. When user clicks on preview then it displays the id, title, activity type, video id, notes title 
+                 and when the user clicks on delete then that file gets deleted. When we land in learning objective page then in the right of the page the files created will be displayed.
+                 Here we have used api calls to get data from backend.
                 </p>
+                <p>
+                 In daywise modules, we have created a form which consists of id and description and given a two select dropdowns where one is for learning objective and other is for prerequisites.
+                 In the select dropdown, the learning objectives were fetched from backend using api calls. After selecting the learning objectives then we need to click on add and to preview that we have displayed 
+                 it in table below. After entering all the details we need to click on save button. After clicking on it then the json get created and that json get appended to the file. That files will be stored in one folder which is created 
+                 based on name of the course. It is previewed at the right of the page and clicking on it, it displays the items like preview and delete. When we click on preview then the details in the file gets displayed. When we click on delete 
+                 then that files get deleted.  
+                </p>
+                <p>
+                  Created the buttons like course page and day module page in learning objectives page. When user clicks on course page then the page gets redirects to course page and when user clicks on module page then it redirects to day modules page.
+                  In day modules page we created a button and when user clicks on it then the page redirects to learning objectives page. In this way, we integrated all the screens.
+                
+                </p>
+                
                 <!-- <li> When user click on download, the file with JSON will be stored and save in the local system</li> -->
                 <!-- <li>Applied ReactJs,Javascript,Css,HTML to create components like alert message, count number of tasks , outlook </li>
                 <li>Used Json , Ajax for setting a timer to delete the task and fetched data from Git repository for mount functionality</li> -->
